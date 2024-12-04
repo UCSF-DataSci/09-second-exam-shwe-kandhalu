@@ -75,4 +75,5 @@ df['month'] = df['visit_date'].dt.month
 
 # group by month and calculate mean walking speed
 monthly_speed = df.groupby('month')['walking_speed'].mean().reset_index()
+print("Monthly Mean Walking Speed:")
 print(monthly_speed)

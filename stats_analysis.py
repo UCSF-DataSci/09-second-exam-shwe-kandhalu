@@ -52,11 +52,11 @@ cost_summary = df.groupby('insurance_type')['visit_cost'].agg(['mean', 'median',
 print(cost_summary)
 
 # boxplot of visit costs
-sns.boxplot(x='insurance_type', y='visit_cost', data=df)
+sns.boxplot(x = 'insurance_type', y = 'visit_cost', df)
 plt.savefig('boxplot.png')
 
 # histogram of visit costs across insurance types
-plt.hist('visit_cost', data=df, bins=25)
+plt.hist('visit_cost', df, bins=25)
 plt.savefig('visit_cost_hist.png')
 
 # effect size calculation
@@ -74,4 +74,3 @@ print(cohens_d(groups[0], groups[1]))  # Basic vs Premium
 # - Education age interaction effects on walking speed
 # - Control for relevant confounders
 # - Report key statistics and p-values
-

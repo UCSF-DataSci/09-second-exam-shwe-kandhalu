@@ -45,6 +45,8 @@ costs = {'Basic': 100, 'Premium': 200, 'Platinum': 300}
 np.random.seed(189)
 df['visit_cost'] = df['insurance_type'].map(costs) + np.random.normal(0, 10, size=len(df))
 
+df.to_csv("ms_data_new.csv", index=False)
+
 # 3. Calculate summary statistics:
 # - Mean walking speed by education level
 # - Mean costs by insurance type

@@ -1,6 +1,6 @@
-DS-217 Final Exam: Multiple Sclerosis Analysis
+### DS-217 Final Exam: Multiple Sclerosis Analysis
 
-Instructions
+Instructions:
 This exam consists of four interconnected questions analyzing MS patient data
 Submit your solutions as separate files with the names specified in each question
 Each question builds upon the previous ones - complete them in order

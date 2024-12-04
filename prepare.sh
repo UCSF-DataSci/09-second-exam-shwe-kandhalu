@@ -8,7 +8,7 @@ python3 generate_dirty_data.py
 cat ms_data_dirty.csv | grep -v '^#' | sed '/^$/d' | sed -e 's/,,*/,/g' | cut -d ',' -f1,2,4,5,6 > ms_data.csv
 
 # create list file for insurance with tiers
-echo -e "insurance_type\nBasic\nPremium\nPlatinum" > insurance.lst # create list
+echo -e "Basic\nPremium\nPlatinum" > insurance.lst # create list
 
 visits=$(wc -l < ms_data.csv)
 
